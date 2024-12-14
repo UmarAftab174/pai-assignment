@@ -44,12 +44,12 @@ Ensure the following Python packages are installed:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
+   git clone https://github.com/<UmarAftab174>/<pai-assignment>.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd <repo-name>
+   cd <pai-assignment>
    ```
 
 3. Install the dependencies:
@@ -62,14 +62,14 @@ Ensure the following Python packages are installed:
    streamlit run app.py
    ```
 
-5. Open the link provided by Streamlit in your browser (usually `http://localhost:8501`).
+5. Open the link provided by Streamlit in your browser (usually `https://pai-assignment-buck.streamlit.app/`).
 
 ---
 
 ## File Structure
 
 ```plaintext
-<repo-name>/
+<pai-assignment>/
 ├── app.py                 # Main application file
 ├── requirements.txt       # Python dependencies
 └── README.md              # Documentation (this file)
@@ -79,15 +79,22 @@ Ensure the following Python packages are installed:
 
 ## Dataset Description
 - The dataset used is the **"Taxis"** dataset from Seaborn's built-in dataset collection.
-- It contains information about taxi rides, including:
-  - `pickup`: Date and time of pickup.
-  - `dropoff`: Date and time of drop-off.
-  - `fare`: Total fare amount.
-  - `tip`: Tip amount.
-  - `distance`: Distance traveled.
-  - `pickup_borough`: Borough of pickup location.
-  - `color`: Taxi type (e.g., yellow, green).
-  - `payment`: Payment type (e.g., card, cash).
+- Displays a detailed dataset of taxi rides.
+   - Columns in the dataset include:
+     - `pickup`: Timestamp of ride pickup.
+     - `dropoff`: Timestamp of ride dropoff.
+     - `passengers`: Number of passengers in the ride.
+     - `distance`: Distance covered in the ride (in miles).
+     - `fare`: Fare charged for the ride.
+     - `tip`: Tip given for the ride.
+     - `tolls`: Tolls charged during the ride.
+     - `total`: Total amount charged (fare + tip + tolls).
+     - `color`: Color of the taxi (e.g., yellow, green).
+     - `payment`: Payment method used (e.g., cash, credit card).
+     - `pickup_zone`: Geographic zone of ride pickup.
+     - `dropoff_zone`: Geographic zone of ride dropoff.
+     - `pickup_borough`: Borough of ride pickup.
+     - `dropoff_borough`: Borough of ride dropoff.
 
 ---
 
@@ -102,7 +109,7 @@ Ensure the following Python packages are installed:
 3. **Fare and Tip Comparisons**:
    - Weekday and weekend trends differ in terms of fare and tipping behavior.
 
-4. **Lifestyle Analysis**:
+4. **Citizen Behavior Analysis**:
    - Time-of-day ride patterns provide insight into the activity levels in New York City.
 
 ---
